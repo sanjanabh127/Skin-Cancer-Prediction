@@ -4,15 +4,15 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
 
-# Load the trained model
+
 model = load_model('Skin_Cancer.h5')
 
 
-# Function to preprocess and predict the image
+
 def predict_skin_cancer(image_path, model):
-    img = image.load_img(image_path, target_size=(224, 224))  # Load Image
-    img_array = image.img_to_array(img) / 255.0  # Normalize
-    img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
+    img = image.load_img(image_path, target_size=(224, 224))  
+    img_array = image.img_to_array(img) / 255.0  
+    img_array = np.expand_dims(img_array, axis=0)  
 
     # Make Prediction
     prediction = model.predict(img_array)
@@ -21,7 +21,7 @@ def predict_skin_cancer(image_path, model):
     return class_label, img
 
 
-# Streamlit App
+
 st.title("Skin Cancer Detection")
 
 st.markdown("""
