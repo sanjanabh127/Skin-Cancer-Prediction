@@ -4,6 +4,7 @@
  ![Keras](https://img.shields.io/badge/Keras-2.6+-D00000.svg?logo=keras&logoColor=white) 
  ![NumPy](https://img.shields.io/badge/NumPy-1.x-013243.svg?logo=numpy&logoColor=white) 
  ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-013243.svg?logo=plotly&logoColor=white) 
+ ![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-ff4b4b?logo=streamlit)
 
 
 ---
